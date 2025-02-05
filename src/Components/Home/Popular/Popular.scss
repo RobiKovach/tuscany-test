@@ -1,0 +1,20 @@
+.popular {
+  margin-top: 100px;
+  &__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: "Open Sans";
+  }
+
+  &__title {
+    color: #333;
+    text-align: left;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+
+}

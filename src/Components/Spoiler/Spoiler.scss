@@ -1,0 +1,35 @@
+#language-select {
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.6;
+  background: transparent;
+  cursor: pointer;
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+  option {
+    background-color: #545454;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.select-language {
+  &--nohome {
+    select {
+      color: #333 !important;
+    }
+
+    option {
+      background-color: #a6a6a6 !important;
+    }
+  }
+}

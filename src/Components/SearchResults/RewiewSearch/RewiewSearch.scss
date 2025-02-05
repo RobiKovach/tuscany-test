@@ -1,0 +1,143 @@
+.search-results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  padding-top: 200px;
+  margin: 0 auto;
+
+  &__item {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 17px;
+    width: 100%;
+  }
+
+  &__image {
+    max-width: 340px;
+    width: 340px;
+    height: 265px;
+    border-radius: 24px;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  &__conteiner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  &__subtitle {
+    color: #333;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+}
+
+.info-results {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  &__itembox {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+    width: 100%;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__actives {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-shrink: 0;
+  }
+}
+
+.item-results {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  &__description {
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+  }
+}
+
+.actives-results {
+  &__price {
+    margin-bottom: 14px;
+    color: #333;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: right;
+  }
+
+  &__view {
+    color: #fa8b02;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+
+    display: flex;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 50px;
+    border: 1px solid #fa8b02;
+    transition: 0.3s;
+    &:hover {
+      background: #fa9a24;
+      color: #fff;
+    }
+  }
+
+  &__buy {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    display: flex;
+    padding: 10px 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    border-radius: 50px;
+    background: #fa8b02;
+    transition: 0.3s;
+    border: none;
+    &:hover {
+      background: #fa9a24;
+    }
+  }
+}

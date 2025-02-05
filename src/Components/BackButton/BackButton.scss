@@ -1,0 +1,25 @@
+.button-back {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 50px;
+  opacity: 0.6;
+}
+
+.back-button {
+  color: #333;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.back-button-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}

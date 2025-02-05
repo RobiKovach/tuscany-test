@@ -1,0 +1,140 @@
+@import "../../styles/mixins";
+
+.header {
+  max-width: 100%;
+  font-family: "Open Sans", sans-serif;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .menu-open & {
+    position: fixed;
+  }
+
+  &__wrapper {
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  &__logo {
+    .menu-open & {
+      position: relative;
+      z-index: 2;
+    }
+    @media (max-width: 768px) {
+      width: 80px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__other {
+    display: flex;
+    align-items: center;
+    column-gap: 167px;
+
+    // Для малих екранів (до 600px) змінюємо фон і розмір тексту
+    @include responsive(small) {
+    }
+
+    // Для середніх екранів (до 900px) змінюємо розмір тексту
+    @include responsive(medium) {
+      column-gap: 80px;
+    }
+
+    // Для великих екранів (до 1200px) зменшуємо відступи
+    @include responsive(large) {
+      column-gap: 10px;
+    }
+  }
+}
+
+.link-active {
+  border-bottom: 2px solid #fa8b02;
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+
+  @media (max-width: 768px) {
+    column-gap: 10px;
+  }
+
+  .menu-open & {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__login {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    transition: 0.3s;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  &__sign {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+
+    display: flex;
+    padding: 10px 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 120px;
+
+    border-radius: 50px;
+    background: #fa8b02;
+    transition: 0.3s;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      min-width: 60px;
+    }
+
+    &:hover {
+      background: #fa9a24;
+    }
+  }
+}
+
+.product-page-nohome {
+  color: #333;
+  .menu-open & {
+    color: #fff;
+  }
+}
+
+.moving-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}

@@ -1,0 +1,32 @@
+import React from "react";
+import { useLocation } from "react-router-dom"; // Отримуємо поточний URL
+import Spoiler from "../Spoiler/Spoiler";
+import Menu from "./Menu/Menu";
+import "./Header.scss";
+
+export default function Header() {
+  const location = useLocation(); // Отримуємо поточний URL
+
+  // Перевіряємо, чи це не головна сторінка
+  const isNotHomePage = location.pathname !== "/";
+
+  return (
+    <header className={`header ${isNotHomePage ? "header--nohome" : ""}`}>
+      <div className="header__wrapper">
+        <div className="header__logo">
+          <img src="/img/logo.png" alt="Logo" />
+        </div>
+        <div className="header__other">
+          {/* Передаємо клас для меню */}
+          <Menu className={isNotHomePage ? "menu--nohome" : ""} />
+          <div className="header__actions action-header">
+            <div className="action-header__language">
+              <Spoiler />
+            </div>
+            <div id="header-container"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
