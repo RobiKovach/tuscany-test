@@ -12,7 +12,7 @@ import SearchResults from "./Components/SearchResults/SearchResults";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/tuscany-test">
       <LanguageProvider>
         <Routes>
           {/* Головна сторінка */}

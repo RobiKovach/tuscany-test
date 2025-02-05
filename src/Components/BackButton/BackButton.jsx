@@ -7,7 +7,11 @@ const BackButton = () => {
 
   return (
     <div onClick={() => navigate(-1)} className="back-button-container">
-      <img src="/img/arrow-back.svg" alt="Back" className="back-button__icon" />
+      <img
+        src={`${process.env.PUBLIC_URL}/img/arrow-back.svg`}
+        alt="Back"
+        className="back-button__icon"
+      />
       <button className="back-button">Назад</button>
     </div>
   );

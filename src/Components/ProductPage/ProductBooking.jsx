@@ -6,14 +6,21 @@ const ProductBooking = ({ product, language }) => {
       {/* Головне зображення продукту */}
       <div className="product__images">
         <div className="product__image">
-          <img src={product.image} alt={product.name} />
+          <img
+            src={`${process.env.PUBLIC_URL}${product.image}`}
+            alt={product.name}
+          />
         </div>
 
         {/* Додаткові зображення */}
         {product.images && product.images.length > 0 && (
           <div className="product__sub-images">
             {product.images.map((img, index) => (
-              <img key={index} src={img} alt={`${product.name} ${index + 1}`} />
+              <img
+                key={index}
+                src={`${process.env.PUBLIC_URL}${img}`}
+                alt={`${product.name} ${index + 1}`}
+              />
             ))}
           </div>
         )}

@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__wrapper">
         <div className="footer__top">
-          <img src="/img/logo.png" alt="Logo" />
+          <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="Logo" />
         </div>
         <div className="footer__content content-footer">
           <FooterContent />

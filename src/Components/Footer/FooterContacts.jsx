@@ -10,19 +10,19 @@ const FooterContacts = () => {
     {
       label: texts.address, // Переклад адреси
       path: "https://maps.app.goo.gl/2Hw4vB6EaSomC9Yk8",
-      icon: "/img/location.svg",
+      icon: `${process.env.PUBLIC_URL}/img/location.svg`,
       isExternal: true,
     },
     {
       label: "+39 346 368 5708",
       path: "tel:+393463685708",
-      icon: "/img/phone.svg",
+      icon: `${process.env.PUBLIC_URL}/img/phone.svg`,
       isExternal: true,
     },
     {
       label: "italiainlimo@gmail.com",
       path: "mailto:italiainlimo@gmail.com",
-      icon: "/img/email.svg",
+      icon: `${process.env.PUBLIC_URL}/img/email.svg`,
       isExternal: true,
     },
   ];

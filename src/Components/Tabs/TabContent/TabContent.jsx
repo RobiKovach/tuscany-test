@@ -60,7 +60,7 @@ const TabContent = ({
           <>
             <img
               className="tab__item-icon"
-              src="/img/icon-date.svg"
+              src={`${process.env.PUBLIC_URL}/img/icon-date.svg`}
               alt="Icon"
             />
             <span className="tab__item-title">{texts.Date}</span>
@@ -74,7 +74,7 @@ const TabContent = ({
           <>
             <img
               className="tab__item-icon"
-              src="/img/icon-time.svg"
+              src={`${process.env.PUBLIC_URL}/img/icon-time.svg`}
               alt="Icon"
             />
             <span className="tab__item-title">{texts.Time}</span>
@@ -91,7 +91,7 @@ const TabContent = ({
           <>
             <img
               className="tab__item-icon"
-              src="/img/icon-tour.svg"
+              src={`${process.env.PUBLIC_URL}/img/icon-tour.svg`}
               alt="Icon"
             />
             <span className="tab__item-title">{texts.Tour}</span>
@@ -114,7 +114,7 @@ const TabContent = ({
           <>
             <img
               className="tab__item-icon"
-              src="/img/public-people.svg"
+              src={`${process.env.PUBLIC_URL}/img/public-people.svg`}
               alt="Icon"
             />
             <span className="tab__item-title">{texts.NumberOfPeople}</span>
@@ -129,7 +129,7 @@ const TabContent = ({
           <>
             <img
               className="tab__item-icon"
-              src="/img/icon-car.svg"
+              src={`${process.env.PUBLIC_URL}/img/icon-car.svg`}
               alt="Icon"
             />
             <span className="tab__item-title">{texts.Transportation}</span>
@@ -148,7 +148,7 @@ const TabContent = ({
           <>
             <img
               className="tab__item-icon"
-              src="/img/icon-type.svg"
+              src={`${process.env.PUBLIC_URL}/img/icon-type.svg`}
               alt="Icon"
             />
             <span className="tab__item-title">{texts.Types}</span>

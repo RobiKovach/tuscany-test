@@ -102,7 +102,7 @@ const SliderComponent = () => {
             >
               <img
                 className="popular__image"
-                src={product.image}
+                src={`${process.env.PUBLIC_URL}${product.image}`}
                 alt={translatedName}
               />
               <h3>{translatedName}</h3>
@@ -113,7 +113,7 @@ const SliderComponent = () => {
               <div className="descriptions__popular popular-description">
                 <div className="popular-description__item">
                   <img
-                    src="/img/icon-date-orange.svg"
+                    src={`${process.env.PUBLIC_URL}/img/icon-date-orange.svg`}
                     alt="icon"
                     className="popular__icon"
                   />
@@ -121,7 +121,7 @@ const SliderComponent = () => {
                 </div>
                 <div className="popular-description__item">
                   <img
-                    src="/img/icon-people-orange.svg"
+                    src={`${process.env.PUBLIC_URL}/img/icon-people-orange.svg`}
                     alt="icon"
                     className="popular__icon"
                   />

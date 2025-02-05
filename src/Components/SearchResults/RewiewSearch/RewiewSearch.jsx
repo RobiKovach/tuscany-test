@@ -14,7 +14,7 @@ const RewiewSearch = ({ product }) => {
     <div className="search-results__item">
       <img
         className="search-results__image"
-        src={product.image}
+        src={`${process.env.PUBLIC_URL}${product.image}`}
         alt={product.name}
       />
       <div className="search-results__conteiner">

@@ -60,7 +60,7 @@ const CommentsSlider = ({ productId }) => {
             <div className="comment-content">
               <img
                 className="comment-avatar"
-                src={comment.image}
+                src={`${process.env.PUBLIC_URL}${comment.image}`}
                 alt={comment.name}
               />
               <h3>{comment.name}</h3>

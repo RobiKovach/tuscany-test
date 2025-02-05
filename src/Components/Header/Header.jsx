@@ -14,7 +14,7 @@ export default function Header() {
     <header className={`header ${isNotHomePage ? "header--nohome" : ""}`}>
       <div className="header__wrapper">
         <div className="header__logo">
-          <img src="/img/logo.png" alt="Logo" />
+          <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="Logo" />
         </div>
         <div className="header__other">
           {/* Передаємо клас для меню */}

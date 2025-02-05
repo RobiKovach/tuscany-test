@@ -11,13 +11,13 @@ const TabButtons = ({ activeTab, setActiveTab }) => {
       {[
         {
           label: texts.PublicTours, // Переклад "Public Tours"
-          activeIcon: "/img/public-search-active.svg",
-          inactiveIcon: "/img/public-search-inactive.svg",
+          activeIcon: `${process.env.PUBLIC_URL}/img/public-search-active.svg`,
+          inactiveIcon: `${process.env.PUBLIC_URL}/img/public-search-inactive.svg`,
         },
         {
           label: texts.PrivateTours, // Переклад "Private Tours"
-          activeIcon: "/img/private-search-active.svg",
-          inactiveIcon: "/img/private-search-inactive.svg",
+          activeIcon: `${process.env.PUBLIC_URL}/img/private-search-active.svg`,
+          inactiveIcon: `${process.env.PUBLIC_URL}/img/private-search-inactive.svg`,
         },
       ].map((tab, index) => (
         <button

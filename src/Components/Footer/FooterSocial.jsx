@@ -10,17 +10,17 @@ const FooterSocial = () => {
     {
       label: "Twitter",
       path: "https://twitter.com/example",
-      icon: "/img/twitter.svg",
+      icon: `${process.env.PUBLIC_URL}/img/twitter.svg`,
     },
     {
       label: "Facebook",
       path: "https://facebook.com/example",
-      icon: "/img/facebook.svg",
+      icon: `${process.env.PUBLIC_URL}/img/facebook.svg`,
     },
     {
       label: "Instagram",
       path: "https://instagram.com/example",
-      icon: "/img/instagram.svg",
+      icon: `${process.env.PUBLIC_URL}/img/instagram.svg`,
     },
   ];
 

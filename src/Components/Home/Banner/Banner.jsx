@@ -6,11 +6,13 @@ export default function Banner() {
   return (
     <section
       className="banner"
-      style={{ backgroundImage: `url("/img/banner.png")` }}
+      style={{
+        backgroundImage: `url("${process.env.PUBLIC_URL}/img/banner.png")`,
+      }}
     >
       <img
         className="banner__title"
-        src="/img/title-banner.svg"
+        src={`${process.env.PUBLIC_URL}/img/title-banner.svg`}
         alt="Logo"
       ></img>
       <p className="banner__subtitle">

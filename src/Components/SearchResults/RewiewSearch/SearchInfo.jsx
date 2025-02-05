@@ -5,7 +5,7 @@ const SearchInfo = ({ product, texts }) => {
     <div className="info-results__items">
       <div className="info-results__item item-results">
         <img
-          src="/img/products/icons/calendar-icon.svg"
+          src={`${process.env.PUBLIC_URL}/img/products/icons/calendar-icon.svg`}
           alt="Calendar Icon"
           className="item-results__icon"
         />
@@ -16,7 +16,7 @@ const SearchInfo = ({ product, texts }) => {
       </div>
       <div className="info-results__item item-results">
         <img
-          src="/img/products/icons/icon_clock.svg"
+          src={`${process.env.PUBLIC_URL}/img/products/icons/icon_clock.svg`}
           alt="Clock Icon"
           className="item-results__icon"
         />
@@ -31,7 +31,7 @@ const SearchInfo = ({ product, texts }) => {
       </div>
       <div className="info-results__item item-results">
         <img
-          src="/img/products/icons/icon_private-tours.svg"
+          src={`${process.env.PUBLIC_URL}/img/products/icons/icon_private-tours.svg`}
           alt="People Icon"
           className="item-results__icon"
         />
@@ -42,7 +42,7 @@ const SearchInfo = ({ product, texts }) => {
       </div>
       <div className="info-results__item item-results">
         <img
-          src="/img/products/icons/icon_bus.svg"
+          src={`${process.env.PUBLIC_URL}/img/products/icons/icon_bus.svg`}
           alt="Bus Icon"
           className="item-results__icon"
         />

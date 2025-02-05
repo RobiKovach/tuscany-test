@@ -14,18 +14,30 @@ const ImageGrid = ({ productId }) => {
   return (
     <div className="image-grid">
       <div className="image-grid__item image-grid__item--large">
-        <img src={product.gallery[0]} alt="Large" />
+        <img
+          src={`${process.env.PUBLIC_URL}${product.gallery[0]}`}
+          alt="Large"
+        />
       </div>
       <div className="image-grid__column">
         <div className="image-grid__item">
-          <img src={product.gallery[1]} alt="Top" />
+          <img
+            src={`${process.env.PUBLIC_URL}${product.gallery[1]}`}
+            alt="Top"
+          />
         </div>
         <div className="image-grid__item">
-          <img src={product.gallery[2]} alt="Bottom" />
+          <img
+            src={`${process.env.PUBLIC_URL}${product.gallery[2]}`}
+            alt="Bottom"
+          />
         </div>
       </div>
       <div className="image-grid__item">
-        <img src={product.gallery[3]} alt="Side" />
+        <img
+          src={`${process.env.PUBLIC_URL}${product.gallery[3]}`}
+          alt="Side"
+        />
       </div>
     </div>
   );

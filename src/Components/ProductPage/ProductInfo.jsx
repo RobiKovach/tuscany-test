@@ -46,7 +46,10 @@ const ProductInfo = ({ product, language }) => {
           },
         ].map((item, index) => (
           <div key={index} className="mid-product__item">
-            <img src={`/img/products/icons/${item.icon}`} alt="icon" />
+            <img
+              src={`${process.env.PUBLIC_URL}/img/products/icons/${item.icon}`}
+              alt="icon"
+            />
             <p>
               <b>{translations[language][item.label]}:</b> {item.value}
             </p>
