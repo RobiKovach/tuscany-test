@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tuscany-test/static/css/main.485316e0.css",
+    "main.js": "/tuscany-test/static/js/main.eb3e531e.js",
+    "static/media/slick.svg": "/tuscany-test/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/tuscany-test/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/tuscany-test/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/tuscany-test/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/tuscany-test/index.html",
+    "main.485316e0.css.map": "/tuscany-test/static/css/main.485316e0.css.map",
+    "main.eb3e531e.js.map": "/tuscany-test/static/js/main.eb3e531e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.485316e0.css",
+    "static/js/main.eb3e531e.js"
+  ]
+}
