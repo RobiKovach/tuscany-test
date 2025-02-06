@@ -88,6 +88,12 @@
     border-radius: 12px;
     background: #fa8b02;
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: #ff9f00;
+    }
 
     @media (max-width: 768px) {
       padding: 14px;
@@ -131,6 +137,7 @@
       line-height: normal;
       opacity: 0.8;
       outline: none;
+      cursor: pointer;
       @media (max-width: 768px) {
         font-size: 14px;
       }
