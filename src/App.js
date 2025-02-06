@@ -9,6 +9,7 @@ import { LanguageProvider } from "./Components/LanguageContext/LanguageContext";
 import ResponsiveMove from "./Components/ResponsiveMove/ResponsiveMove";
 import Tabs from "./Components/Tabs/Tabs";
 import SearchResults from "./Components/SearchResults/SearchResults";
+import Welcome from "./Components/Home/Welcome/Welcome";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                 <Header />
                 <Banner />
                 <Popular />
+                <Welcome />
                 <ResponsiveMove />
                 <Footer />
               </>

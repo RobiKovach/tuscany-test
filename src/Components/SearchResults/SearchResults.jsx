@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import "./SearchResults.scss";
 import { useLanguage } from "../LanguageContext/LanguageContext";
 import translations from "../../data/translations.json";
@@ -58,6 +59,7 @@ const SearchResults = () => {
           />
         )}
       </div>
+      <Footer />
     </>
   );
 };
