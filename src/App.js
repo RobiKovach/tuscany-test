@@ -10,6 +10,7 @@ import ResponsiveMove from "./Components/ResponsiveMove/ResponsiveMove";
 import Tabs from "./Components/Tabs/Tabs";
 import SearchResults from "./Components/SearchResults/SearchResults";
 import Welcome from "./Components/Home/Welcome/Welcome";
+import SpecialOffers from "./Components/Home/SpecialOffers/SpecialOffers";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Banner />
                 <Popular />
                 <Welcome />
+                <SpecialOffers />
                 <ResponsiveMove />
                 <Footer />
               </>
