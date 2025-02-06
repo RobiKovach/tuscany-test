@@ -11,6 +11,8 @@ import Tabs from "./Components/Tabs/Tabs";
 import SearchResults from "./Components/SearchResults/SearchResults";
 import Welcome from "./Components/Home/Welcome/Welcome";
 import SpecialOffers from "./Components/Home/SpecialOffers/SpecialOffers";
+import Anons from "./Components/Home/Anons/Anons";
+import BookBike from "./Components/Home/BookBike/BookBike";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
                 <Popular />
                 <Welcome />
                 <SpecialOffers />
+                <Anons />
+                <BookBike />
                 <ResponsiveMove />
                 <Footer />
               </>

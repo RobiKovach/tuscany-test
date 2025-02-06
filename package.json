@@ -7,6 +7,8 @@
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-input-mask": "^3.0.0-alpha.2",
+    "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.3",
