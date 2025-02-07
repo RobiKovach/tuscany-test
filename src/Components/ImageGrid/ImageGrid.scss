@@ -4,6 +4,9 @@
   gap: 10px;
   max-width: 100%;
   padding: 10px;
+  @media (max-width: 768px) {
+    gap: 5px;
+  }
 
   &__item {
     border-radius: 10px;
@@ -25,5 +28,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+    @media (max-width: 768px) {
+      gap: 5px;
+    }
   }
 }

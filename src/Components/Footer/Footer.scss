@@ -14,6 +14,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 33px;
+    @media (max-width: 768px) {
+      gap: 16px;
+    }
   }
 
   &__top {
@@ -22,6 +25,9 @@
     padding-bottom: 33px;
     border-bottom: 1px solid #ffffff2e;
     width: 100%;
+    @media (max-width: 768px) {
+      padding-bottom: 16px;
+    }
   }
 
   &__bottom {
@@ -39,6 +45,11 @@
     font-weight: 400;
     line-height: 26px; /* 162.5% */
     opacity: 0.6;
+
+    @media (max-width: 768px) {
+      padding-top: 16px;
+      font-size: 12px;
+    }
   }
 
   &__content {
@@ -49,7 +60,7 @@
     @media (max-width: 768px) {
       display: flex;
       flex-direction: column;
-      row-gap: 40px;
+      row-gap: 20px;
     }
   }
 }
@@ -63,6 +74,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    @media (max-width: 768px) {
+      row-gap: 10px;
+    }
   }
 
   &__social {
@@ -90,6 +104,10 @@
     cursor: pointer;
     transition: 0.3s;
 
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
     &:hover {
       scale: 1.1;
     }
@@ -113,6 +131,10 @@
     cursor: pointer;
     transition: 0.3s;
 
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
     &:hover {
       scale: 1.1;
     }
@@ -135,6 +157,10 @@
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
 
     &:hover {
       scale: 1.1;
@@ -161,6 +187,10 @@
     column-gap: 10px;
     cursor: pointer;
     transition: 0.3s;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
 
     &:hover {
       scale: 1.1;
@@ -197,4 +227,7 @@
   font-weight: 800;
   line-height: 30px; /* 150% */
   margin: 0;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 }

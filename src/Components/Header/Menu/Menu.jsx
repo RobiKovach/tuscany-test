@@ -9,10 +9,9 @@ export default function Menu() {
   const iconMenuRef = useRef(null);
   const location = useLocation();
 
-  // Перевіряємо, чи поточна сторінка не є головною
-  const isNotHomePage = location.pathname !== "/";
+  const isNotHomePage =
+    location.pathname !== "/" && location.pathname !== "/about";
 
-  // Масив пунктів меню
   const menuItems = [
     { path: "/", key: "home" },
     { path: "/about", key: "about_us" },
@@ -37,7 +36,6 @@ export default function Menu() {
 
   return (
     <div className="header__menu menu">
-      {/* Іконка відкриття меню */}
       <button
         ref={iconMenuRef}
         type="button"

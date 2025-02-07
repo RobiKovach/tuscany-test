@@ -44,6 +44,9 @@ const CommentsSlider = ({ productId }) => {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          prevArrow: false,
+          nextArrow: false,
+          dots: true,
         },
       },
     ],

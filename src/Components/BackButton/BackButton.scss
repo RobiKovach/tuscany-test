@@ -16,6 +16,10 @@
   cursor: pointer;
   background: transparent;
   border: none;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 .back-button-container {
   display: flex;

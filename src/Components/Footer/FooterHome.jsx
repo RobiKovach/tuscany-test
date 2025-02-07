@@ -6,7 +6,7 @@ import translations from "../../data/translations"; // Файл з перекл�
 // Масив із пунктів меню (ключі для перекладу)
 const footerLinks = [
   { key: "home", path: "/" },
-  { key: "about_us", path: "/about_us" },
+  { key: "about_us", path: "/about" },
   { key: "tours", path: "/tours" },
 ];
 

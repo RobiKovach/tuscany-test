@@ -4,6 +4,7 @@
   @media (max-width: 768px) {
     margin-top: 50px;
   }
+
   &__wrapper {
     max-width: 1360px;
     margin: 0 auto;
@@ -18,5 +19,9 @@
     font-weight: 800;
     line-height: normal;
     margin: 0;
+    @media (max-width: 768px) {
+      font-size: 21px;
+      max-width: 60%;
+    }
   }
 }

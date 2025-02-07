@@ -1,6 +1,6 @@
 import React from "react";
-import { useLanguage } from "../../LanguageContext/LanguageContext"; // Хук мови
-import translations from "../../../data/translations"; // Файл перекладів
+import { useLanguage } from "../../LanguageContext/LanguageContext";
+import translations from "../../../data/translations";
 import "./Welcome.scss";
 import WelcomeHeader from "./WelcomeHeader";
 import WelcomeNumbers from "./WelcomeNumbers";

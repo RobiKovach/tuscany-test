@@ -1,9 +1,9 @@
 import React from "react";
+import ProductDetails from "./ProductDetails";
 
 const ProductBooking = ({ product, language }) => {
   return (
     <div className="product__booking-container">
-      {/* Головне зображення продукту */}
       <div className="product__images">
         <div className="product__image">
           <img
@@ -12,7 +12,6 @@ const ProductBooking = ({ product, language }) => {
           />
         </div>
 
-        {/* Додаткові зображення */}
         {product.images && product.images.length > 0 && (
           <div className="product__sub-images">
             {product.images.map((img, index) => (
@@ -25,6 +24,7 @@ const ProductBooking = ({ product, language }) => {
           </div>
         )}
       </div>
+      <ProductDetails product={product} language={language} />
     </div>
   );
 };

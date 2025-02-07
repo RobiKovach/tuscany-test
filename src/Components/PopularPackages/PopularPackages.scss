@@ -24,6 +24,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 25px;
+    @media (max-width: 768px) {
+      row-gap: 12px;
+    }
   }
 }
 
@@ -40,6 +43,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+    @media (max-width: 768px) {
+      row-gap: 8px;
+    }
   }
 
   &__title {
@@ -49,6 +55,9 @@
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   &__price {
@@ -67,6 +76,10 @@
       font-weight: 400;
       line-height: normal;
       opacity: 0.5;
+      @media (max-width: 768px) {
+        font-size: 18px;
+        top: -10px;
+      }
     }
   }
 
@@ -82,7 +95,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
     display: flex;
     padding: 12px 24px;
     align-items: center;
@@ -93,6 +105,12 @@
     border: 1px solid #fa8b02;
     transition: 0.3s;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 6px 12px;
+      width: 90%;
+    }
 
     &:hover {
       background-color: #ff9f00;
@@ -107,6 +125,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .text-day {
@@ -116,6 +137,9 @@
   font-weight: 400;
   line-height: normal;
   opacity: 0.6;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .info-popularpackages {
@@ -124,6 +148,9 @@
     align-items: center;
     column-gap: 16px;
     padding: 16px 10px 16px 0px;
+    @media (max-width: 768px) {
+      padding: 8px 5px 8px 0px;
+    }
   }
 
   &__text {
@@ -133,6 +160,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }
 

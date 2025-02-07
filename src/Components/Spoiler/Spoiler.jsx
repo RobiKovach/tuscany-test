@@ -8,7 +8,8 @@ const Spoiler = () => {
   const location = useLocation(); // Отримуємо поточний URL
 
   // 📌 Перевіряємо, чи відкрито сторінку товару
-  const isNotHomePage = location.pathname !== "/";
+  const isNotHomePage =
+    location.pathname !== "/" && location.pathname !== "/about";
 
   return (
     <div

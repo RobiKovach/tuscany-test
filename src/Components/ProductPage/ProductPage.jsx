@@ -7,7 +7,6 @@ import ResponsiveMove from "../../Components/ResponsiveMove/ResponsiveMove";
 import products from "../../data/products.json";
 import translations from "../../data/translations.json";
 import { useLanguage } from "../../Components/LanguageContext/LanguageContext";
-import ProductDetails from "./ProductDetails";
 import ProductBooking from "./ProductBooking";
 import ProductInfo from "./ProductInfo";
 import ProductGallery from "./ProductGallery";
@@ -33,7 +32,6 @@ const ProductPage = () => {
         <div className="product__info product-info">
           <div className="product-info__top">
             <ProductBooking product={product} language={language} />
-            <ProductDetails product={product} language={language} />
           </div>
           <ProductInfo product={product} language={language} />
           <ProductGallery productId={product.id} language={language} />

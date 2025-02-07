@@ -16,6 +16,7 @@ import BookBike from "./Components/Home/BookBike/BookBike";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import PopularPackages from "./Components/PopularPackages/PopularPackages";
 import Comments from "./Components/Home/Comments/Comments";
+import About from "./Components/AboutPage/AboutPage";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/products/:productId" element={<ProductPage />} />
           <Route path="/" element={<Tabs />} />
           <Route path="/search-results" element={<SearchResults />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </LanguageProvider>
     </Router>

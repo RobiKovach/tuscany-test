@@ -11,7 +11,8 @@ const ResponsiveMove = () => {
   const location = useLocation(); // 📌 Відстежуємо зміну URL
 
   // 📌 Перевіряємо, чи ми на сторінці продукту
-  const isNotHomePage = location.pathname !== "/";
+  const isNotHomePage =
+    location.pathname !== "/" && location.pathname !== "/about";
 
   useEffect(() => {
     const handleResize = () => {
