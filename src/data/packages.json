@@ -1,0 +1,132 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Bike and Rickshaw Rental",
+      "description": "Book your quality vehicle quickly for an hour or all day!",
+      "button_text": "Read More",
+      "image": "/img/services/bike-rickshaw.png"
+    },
+    {
+      "id": 2,
+      "title": "Guided Tours of Lucca",
+      "description": "Live the real Lucchese experience by visiting the suburbs by bike!",
+      "button_text": "Read More",
+      "image": "/img/services/guided-tours-lucca.png"
+    },
+    {
+      "id": 3,
+      "title": "Trips In The Tuscan Hills",
+      "description": "Do you need not only a bike but also a driver? Then you have found the right place!",
+      "button_text": "Read More",
+      "image": "/img/services/tuscan-hills.png"
+    },
+    {
+      "id": 4,
+      "title": "Coach Trip Packages",
+      "description": "Book your quality vehicle quickly for an hour or all day!",
+      "button_text": "Read More",
+      "image": "/img/services/coach-trip.png"
+    },
+    {
+      "id": 5,
+      "title": "Transportation With Luxury Cars",
+      "description": "Live the real Lucchese experience by visiting the suburbs by bike!",
+      "button_text": "Read More",
+      "image": "/img/services/luxury-transport.png"
+    },
+    {
+      "id": 6,
+      "title": "Wine Tours By Bus With Guide",
+      "description": "Do you need not only a bike but also a driver? Then you have found the right place!",
+      "button_text": "Read More",
+      "image": "/img/services/wine-tour.png"
+    }
+  ],
+  "pricing": [
+    {
+      "id": 1,
+      "title": "BIKE / RICKSHAW",
+      "price": "10",
+      "currency": "€",
+      "day": "/day",
+      "features": [
+        "Your bike for a day",
+        "City App",
+        "Discount on Rickshaw",
+        "Guaranteed Support"
+      ],
+      "button_text": "Book Now",
+      "image": "/img/packages/bike-rickshaw.png",
+      "icons": [
+        "/img/services/icons/icon_one_day.svg",
+        "/img/services/icons/icon_map.svg",
+        "/img/services/icons/icon_city_map.svg",
+        "/img/services/icons/icon_support.svg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "BIKE TOURS",
+      "price": "30",
+      "currency": "€",
+      "duration": "/day",
+      "features": [
+        "A Mountain Bike Included",
+        "A Guide For You",
+        "Bottle of water",
+        "Guaranteed Support"
+      ],
+      "button_text": "Book Now",
+      "image": "/img/packages/bike-tours.png",
+      "icons": [
+        "/img/services/icons/icon_mountain_bike.svg",
+        "/img/services/icons/icon_guide.svg",
+        "/img/services/icons/icon_water.svg",
+        "/img/services/icons/icon_support.svg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "BUS TRIPS",
+      "price": "45",
+      "currency": "€",
+      "duration": "/day",
+      "features": [
+        "Park ticket",
+        "Return bus",
+        "Companion",
+        "Guaranteed Support"
+      ],
+      "button_text": "Book Now",
+      "image": "/img/packages/bus-trips.png",
+      "icons": [
+        "/img/services/icons/icon_ticket.svg",
+        "/img/services/icons/icon_bus.svg",
+        "/img/services/icons/icon_companion.svg",
+        "/img/services/icons/icon_support.svg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "TRANSFER",
+      "price": "10",
+      "currency": "€",
+      "duration": "/day",
+      "features": [
+        "Personal Driver",
+        "Wherever You Want",
+        "At the best price",
+        "Guaranteed Support"
+      ],
+      "button_text": "Book Now",
+      "image": "/img/packages/transfer.png",
+      "icons": [
+        "/img/services/icons/icon_driver.svg",
+        "/img/services/icons/icon_location.svg",
+        "/img/services/icons/icon_best_price.svg",
+        "/img/services/icons/icon_support.svg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+.popularpackages {
+  margin-top: 120px;
+  &__wrapper {
+    max-width: 1360px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  &__items {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+  }
+
+  &__item {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}
+
+.item-popularpackages {
+  &__image {
+    border-radius: 24px 24px 0px 0px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  &__price {
+    margin: 0;
+    color: #333;
+    position: relative;
+    &::before {
+      content: "€";
+      position: relative;
+      top: -25px;
+      margin-right: 6px;
+      color: #333;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.5;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    color: #fa8b02;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+    border-radius: 50px;
+    border: 1px solid #fa8b02;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ff9f00;
+      color: #fff;
+    }
+  }
+}
+
+.price-orange {
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-day {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.6;
+}
+
+.info-popularpackages {
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 16px 10px 16px 0px;
+  }
+
+  &__text {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

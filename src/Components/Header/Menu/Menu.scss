@@ -21,6 +21,12 @@
   }
 
   &__item {
+    transition: 0.3s;
+
+    &:hover {
+      scale: 1.1;
+    }
+
     &::marker {
       content: "";
       display: none;
@@ -35,11 +41,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    transition: 0.3s;
-
-    &:hover {
-      scale: 1.1;
-    }
 
     @media (max-width: 768px) {
       font-size: 28px;

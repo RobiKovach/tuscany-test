@@ -13,13 +13,15 @@ import Welcome from "./Components/Home/Welcome/Welcome";
 import SpecialOffers from "./Components/Home/SpecialOffers/SpecialOffers";
 import Anons from "./Components/Home/Anons/Anons";
 import BookBike from "./Components/Home/BookBike/BookBike";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+import PopularPackages from "./Components/PopularPackages/PopularPackages";
 
 function App() {
   return (
     <Router basename="/tuscany-test">
       <LanguageProvider>
+        <ScrollToTop />
         <Routes>
-          {/* Головна сторінка */}
           <Route
             path="/"
             element={
@@ -31,12 +33,12 @@ function App() {
                 <SpecialOffers />
                 <Anons />
                 <BookBike />
+                <PopularPackages />
                 <ResponsiveMove />
                 <Footer />
               </>
             }
           />
-          {/* Сторінка товару без зайвих компонентів */}
           <Route path="/products/:productId" element={<ProductPage />} />
           <Route path="/" element={<Tabs />} />
           <Route path="/search-results" element={<SearchResults />} />
