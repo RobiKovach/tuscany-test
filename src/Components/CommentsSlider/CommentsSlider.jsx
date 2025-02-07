@@ -3,9 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./CommentsSlider.scss"; // Стилі
-import products from "../../data/products.json"; // Імпортуємо JSON з продуктами
+import products from "../../data/products.json";
 
-// 📌 Кастомна стрілка "Назад"
 const PrevArrow = ({ onClick }) => {
   return (
     <button className="custom-prev-arrow comment-arrow" onClick={onClick}>
@@ -14,7 +13,6 @@ const PrevArrow = ({ onClick }) => {
   );
 };
 
-// 📌 Кастомна стрілка "Вперед"
 const NextArrow = ({ onClick }) => {
   return (
     <button className="custom-next-arrow comment-arrow" onClick={onClick}>
@@ -24,7 +22,6 @@ const NextArrow = ({ onClick }) => {
 };
 
 const CommentsSlider = ({ productId }) => {
-  // Знаходимо продукт за ID
   const product = products.find((p) => p.id === productId);
 
   if (!product || !product.comments || product.comments.length === 0) {
@@ -40,8 +37,8 @@ const CommentsSlider = ({ productId }) => {
     autoplay: false,
     autoplaySpeed: 3000,
     arrows: true,
-    prevArrow: <PrevArrow />, // Використовуємо кастомну стрілку
-    nextArrow: <NextArrow />, // Використовуємо кастомну стрілку
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
     responsive: [
       {
         breakpoint: 768,

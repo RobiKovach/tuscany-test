@@ -1,11 +1,18 @@
 .welcome {
   &__wrapper {
-    width: 1360px;
+    max-width: 1360px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 120px 20px 0;
+
+    @media (max-width: 768px) {
+      width: 90%;
+      flex-direction: column;
+      row-gap: 40px;
+      padding: 100px 20px 0;
+    }
   }
 
   &__info {
@@ -14,6 +21,9 @@
     flex-direction: column;
     row-gap: 32px;
     align-items: flex-start;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 
@@ -56,6 +66,9 @@
     display: flex;
     align-items: flex-start;
     column-gap: 50px;
+    @media (max-width: 768px) {
+      column-gap: 10px;
+    }
   }
 }
 

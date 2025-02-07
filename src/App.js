@@ -15,6 +15,7 @@ import Anons from "./Components/Home/Anons/Anons";
 import BookBike from "./Components/Home/BookBike/BookBike";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import PopularPackages from "./Components/PopularPackages/PopularPackages";
+import Comments from "./Components/Home/Comments/Comments";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
                 <Anons />
                 <BookBike />
                 <PopularPackages />
+                <Comments />
                 <ResponsiveMove />
                 <Footer />
               </>

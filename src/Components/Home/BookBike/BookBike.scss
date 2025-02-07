@@ -27,6 +27,9 @@
     position: absolute;
     right: -40px;
     bottom: -40px;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -49,6 +52,12 @@
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.3);
     width: 100%;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
   }
 }
 
@@ -94,6 +103,13 @@
     cursor: pointer;
     &:hover {
       background: #fa9a24;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      align-self: center;
     }
   }
 

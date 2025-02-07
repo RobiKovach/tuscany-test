@@ -1,10 +1,13 @@
 .popular {
   margin-top: 100px;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
   &__wrapper {
     max-width: 1360px;
     margin: 0 auto;
     padding: 0 20px;
-    font-family: "Open Sans";
   }
 
   &__title {
@@ -14,5 +17,6 @@
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    margin: 0;
   }
 }

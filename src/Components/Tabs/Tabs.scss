@@ -8,7 +8,9 @@
   align-items: flex-start;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.2);
-  font-family: "Open Sans";
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
 
   &__icon {
     width: 24px;
@@ -50,6 +52,7 @@
       flex-direction: column;
       width: -webkit-fill-available;
       border-radius: 0px 0px 12px 12px;
+      padding: 0px;
     }
   }
 
@@ -66,6 +69,9 @@
     padding: 16px;
     align-items: flex-start;
     gap: 7px;
+    @media (max-width: 768px) {
+      padding: 0px;
+    }
   }
 
   &__item-title {
