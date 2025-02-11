@@ -17,6 +17,8 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import PopularPackages from "./Components/PopularPackages/PopularPackages";
 import Comments from "./Components/Home/Comments/Comments";
 import About from "./Components/AboutPage/AboutPage";
+import TourPackagesPage from "./Components/TourPackagesPage/TourPackagesPage";
+import ServicePage from "./Components/ServicePage/ServicePage";
 
 function App() {
   return (
@@ -43,9 +45,11 @@ function App() {
             }
           />
           <Route path="/products/:productId" element={<ProductPage />} />
+          <Route path="/services/:servicesId" element={<ServicePage />} />
           <Route path="/" element={<Tabs />} />
           <Route path="/search-results" element={<SearchResults />} />
           <Route path="/about" element={<About />} />
+          <Route path="/tours" element={<TourPackagesPage />} />
         </Routes>
       </LanguageProvider>
     </Router>

@@ -4,14 +4,13 @@ import translations from "../../data/translations.json";
 const ProductDetails = ({ product, language }) => {
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
-  const tourKey = product.name.toLowerCase().replace(/[\s&-]+/g, "_");
-  const translatedName =
-    translations[language]?.tour_names?.[tourKey] || product.name;
 
   return (
     <>
       <div className="product__details product-details">
-        <h1 className="product-details__title">{translatedName}</h1>
+        <h1 className="product-details__title">
+          {translations[language][product.name] || product.name}
+        </h1>
         <p className="product-details__price">
           {translations[language].from}:{" "}
           <span className="orange">{product.price}€</span>

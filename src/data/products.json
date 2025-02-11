@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Lucca Bike Tour",
+    "name": "lucca_bike_tour",
     "url": "/products/lucca-bike-tour",
     "price": 34,
     "image": "/img/products/1/main.png",
@@ -49,7 +49,7 @@
   },
   {
     "id": 2,
-    "name": "Cinque Terre Tour",
+    "name": "cinque_terre_tour",
     "url": "/products/cinque-terre-tour",
     "price": 34,
     "image": "/img/products/2/main.png",
@@ -97,7 +97,7 @@
   },
   {
     "id": 3,
-    "name": "Siena and Surroundings",
+    "name": "siena_and_surroundings",
     "url": "/products/siena-and-surroundings",
     "price": 40,
     "image": "/img/products/3/main.png",
@@ -145,7 +145,7 @@
   },
   {
     "id": 4,
-    "name": "Tour of the Lucca Hills",
+    "name": "tour_of_the_lucca_hills",
     "url": "/products/tour-of-the-lucca-hills",
     "price": 35,
     "image": "/img/products/4/main.png",
@@ -193,7 +193,7 @@
   },
   {
     "id": 5,
-    "name": "Gardaland, Verona",
+    "name": "gardaland_verona",
     "url": "/products/gardaland-verona",
     "price": 60,
     "image": "/img/products/5/main.jpg",
@@ -241,7 +241,7 @@
   },
   {
     "id": 6,
-    "name": "Wine tasting In Tuscany",
+    "name": "wine_tasting_in_tuscany",
     "url": "/products/wine-tasting-in-tuscany",
     "price": 48,
     "image": "/img/products/6/main.png",
@@ -289,7 +289,7 @@
   },
   {
     "id": 7,
-    "name": "Pisa & Lucca",
+    "name": "pisa_lucca",
     "url": "/products/pisa-lucca",
     "price": 48,
     "image": "/img/products/7/main.jpeg",

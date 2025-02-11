@@ -4,11 +4,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import products from "../../data/products.json";
-import translations from "../../data/translations.json"; // 🔥 Додаємо переклади
-import { useLanguage } from "../../Components/LanguageContext/LanguageContext"; // 🔥 Отримуємо поточну мову
+import translations from "../../data/translations.json";
+import { useLanguage } from "../../Components/LanguageContext/LanguageContext";
 import "./SliderComponent.scss";
 
-// 📌 Кастомна стрілка "Назад"
 const PrevArrow = (props) => {
   const { className, style, onClick } = props;
   return (
@@ -22,7 +21,6 @@ const PrevArrow = (props) => {
   );
 };
 
-// 📌 Кастомна стрілка "Вперед"
 const NextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
@@ -38,7 +36,7 @@ const NextArrow = (props) => {
 
 const SliderComponent = () => {
   const navigate = useNavigate();
-  const { language } = useLanguage(); // 🔥 Отримуємо поточну мову
+  const { language } = useLanguage();
 
   const settings = {
     dots: false,
@@ -89,12 +87,10 @@ const SliderComponent = () => {
     <div className="slider-container__popular">
       <Slider {...settings}>
         {products.map((product) => {
-          // ✅ Переклад назви туру (перетворюємо ім'я в snake_case, щоб знайти в `translations.json`)
           const tourKey = product.name.toLowerCase().replace(/[\s&-]+/g, "_");
           const translatedName =
             translations[language]?.tour_names?.[tourKey] || product.name;
 
-          // ✅ Переклад "WHEN" (коли відбувається)
           const whenKey = product.when.toLowerCase().replace(/\s/g, "_");
           const translatedWhen =
             translations[language]?.[whenKey] || product.when;
@@ -111,7 +107,7 @@ const SliderComponent = () => {
                 src={`${process.env.PUBLIC_URL}${product.image}`}
                 alt={translatedName}
               />
-              <h3>{translatedName}</h3>
+              <h3>{translations[language][product.name] || product.name}</h3>
               <p className="price__popular">
                 {translations[language].from}{" "}
                 <span className="orange">{product.price}€</span>

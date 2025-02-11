@@ -2,44 +2,50 @@
   "services": [
     {
       "id": 1,
-      "title": "Bike and Rickshaw Rental",
-      "description": "Book your quality vehicle quickly for an hour or all day!",
-      "button_text": "Read More",
+      "title": "bike_rickshaw_rental",
+      "url": "/services/bike-rickshaw-rental",
+      "description": "bike_rental_description",
+      "button_text": "read_more",
       "image": "/img/services/bike-rickshaw.png"
     },
     {
       "id": 2,
-      "title": "Guided Tours of Lucca",
-      "description": "Live the real Lucchese experience by visiting the suburbs by bike!",
-      "button_text": "Read More",
+      "title": "guided_tours_lucca",
+      "url": "/services/guided-tours-lucca",
+      "description": "guided_tour_description",
+      "button_text": "read_more",
       "image": "/img/services/guided-tours-lucca.png"
     },
     {
       "id": 3,
-      "title": "Trips In The Tuscan Hills",
-      "description": "Do you need not only a bike but also a driver? Then you have found the right place!",
-      "button_text": "Read More",
+      "title": "trip_tuscan_hills",
+      "url": "/services/trip-tuscan-hills",
+      "description": "taxi_service_description",
+      "button_text": "read_more",
       "image": "/img/services/tuscan-hills.png"
     },
     {
       "id": 4,
-      "title": "Coach Trip Packages",
-      "description": "Book your quality vehicle quickly for an hour or all day!",
-      "button_text": "Read More",
+      "title": "coach_trip_packages",
+      "url": "/services/coach-trip-packages",
+      "description": "bike_rental_description",
+      "button_text": "read_more",
       "image": "/img/services/coach-trip.png"
     },
     {
       "id": 5,
-      "title": "Transportation With Luxury Cars",
-      "description": "Live the real Lucchese experience by visiting the suburbs by bike!",
-      "button_text": "Read More",
+      "title": "transport_luxury_cars",
+      "url": "/services/transport-luxury-cars",
+      "description": "guided_tour_description",
+      "button_text": "read_more",
       "image": "/img/services/luxury-transport.png"
     },
     {
       "id": 6,
-      "title": "Wine Tours By Bus With Guide",
-      "description": "Do you need not only a bike but also a driver? Then you have found the right place!",
-      "button_text": "Read More",
+      "title": "wine_tours_bus_guide",
+      "url": "/services/wine_tours-bus-guide",
+      "description": "taxi_service_description",
+      "button_text": "read_more",
       "image": "/img/services/wine-tour.png"
     }
   ],
@@ -56,7 +62,7 @@
         "Discount on Rickshaw",
         "Guaranteed Support"
       ],
-      "button_text": "Book Now",
+      "button_text": "book_now",
       "image": "/img/packages/bike-rickshaw.png",
       "icons": [
         "/img/services/icons/icon_one_day.svg",
@@ -77,7 +83,7 @@
         "Bottle of water",
         "Guaranteed Support"
       ],
-      "button_text": "Book Now",
+      "button_text": "book_now",
       "image": "/img/packages/bike-tours.png",
       "icons": [
         "/img/services/icons/icon_mountain_bike.svg",
@@ -98,7 +104,7 @@
         "Companion",
         "Guaranteed Support"
       ],
-      "button_text": "Book Now",
+      "button_text": "book_now",
       "image": "/img/packages/bus-trips.png",
       "icons": [
         "/img/services/icons/icon_ticket.svg",
@@ -119,7 +125,7 @@
         "At the best price",
         "Guaranteed Support"
       ],
-      "button_text": "Book Now",
+      "button_text": "book_now",
       "image": "/img/packages/transfer.png",
       "icons": [
         "/img/services/icons/icon_driver.svg",
