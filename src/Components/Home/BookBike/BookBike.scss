@@ -1,6 +1,10 @@
 .bookbike {
   background: linear-gradient(to bottom, #ffcea1, #ffbf89);
 
+  @media (max-width: 1440px) {
+    overflow: hidden;
+  }
+
   &__wrapper {
     max-width: 1360px;
     margin: 0 auto;

@@ -21,6 +21,7 @@
     flex-wrap: wrap;
     column-gap: 33px;
     row-gap: 74px;
+    justify-content: center;
     @media (max-width: 768px) {
       row-gap: 37px;
       column-gap: 16px;

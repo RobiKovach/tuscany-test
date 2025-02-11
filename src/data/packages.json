@@ -5,6 +5,7 @@
       "title": "bike_rickshaw_rental",
       "url": "/services/bike-rickshaw-rental",
       "description": "bike_rental_description",
+      "description_full": "bike_rickshaw_rental_description",
       "button_text": "read_more",
       "image": "/img/services/bike-rickshaw.png"
     },
@@ -13,6 +14,7 @@
       "title": "guided_tours_lucca",
       "url": "/services/guided-tours-lucca",
       "description": "guided_tour_description",
+      "description_full": "guided_tours_lucca_description_bike",
       "button_text": "read_more",
       "image": "/img/services/guided-tours-lucca.png"
     },
@@ -21,6 +23,7 @@
       "title": "trip_tuscan_hills",
       "url": "/services/trip-tuscan-hills",
       "description": "taxi_service_description",
+      "description_full": "trip_tuscan_hills_description",
       "button_text": "read_more",
       "image": "/img/services/tuscan-hills.png"
     },
@@ -29,6 +32,7 @@
       "title": "coach_trip_packages",
       "url": "/services/coach-trip-packages",
       "description": "bike_rental_description",
+      "description_full": "coach_trip_packages_description",
       "button_text": "read_more",
       "image": "/img/services/coach-trip.png"
     },
@@ -36,7 +40,8 @@
       "id": 5,
       "title": "transport_luxury_cars",
       "url": "/services/transport-luxury-cars",
-      "description": "guided_tour_description",
+      "description": "guided_tours_lucca_description",
+      "description_full": "transport_luxury_cars_description",
       "button_text": "read_more",
       "image": "/img/services/luxury-transport.png"
     },
@@ -45,6 +50,7 @@
       "title": "wine_tours_bus_guide",
       "url": "/services/wine_tours-bus-guide",
       "description": "taxi_service_description",
+      "description_full": "wine_tours_bus_guide_description",
       "button_text": "read_more",
       "image": "/img/services/wine-tour.png"
     }

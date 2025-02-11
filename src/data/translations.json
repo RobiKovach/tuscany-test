@@ -70,6 +70,7 @@
     "book_now": "Book Now",
     "bike_rental_description": "Book your quality vehicle quickly for an hour or all day!",
     "guided_tour_title": "Guided tour of the countryside",
+    "guided_tours_lucca_description": "Explore Lucca with a guide!",
     "guided_tour_description": "Live the real Lucchese experience by visiting the suburbs by bike!",
     "taxi_service_title": "Taxi and NCC service",
     "taxi_service_description": "Do you need not only a bike but also a driver? Then you have found the right place!",
@@ -190,6 +191,12 @@
     "wine_tours_bus_guide": "Wine Tours By Bus With Guide",
     "help": "Help",
     "terms_of_use": "Terms of Use",
+    "wine_tours_bus_guide_description": "Enjoy a delightful wine tour with comfort! Travel to the finest wineries of the region with an experienced guide. Taste exquisite wines, discover unique flavors, and learn about winemaking traditions while traveling by a comfortable bus.",
+    "transport_luxury_cars_description": "Explore the true atmosphere of Lucca while traveling through its suburbs by car! Enjoy comfortable transport, scenic routes, and the authentic Italian charm that makes your journey unforgettable.",
+    "coach_trip_packages_description": "Planning a trip for an hour or the whole day? Rent a comfortable and reliable vehicle quickly and hassle-free! We guarantee quality service and a convenient choice for your travels.",
+    "trip_tuscan_hills_description": "Looking for more than just a bike? We have the perfect solution! If you need a skilled driver along with your ride, we’ve got you covered. Relax and enjoy the scenic landscapes while we take care of the route and your comfort.",
+    "guided_tours_lucca_description_bike": "Embark on an exciting journey through the suburbs of Lucca by bike! Explore picturesque streets, historical landmarks, and charming landscapes while experiencing the unique atmosphere of this incredible city.",
+    "bike_rickshaw_rental_description": "Looking for a quick and convenient way to get around the city? Rent a quality bike or rickshaw for just an hour or the whole day! Enjoy the freedom of movement, explore picturesque streets, and ride comfortably without any worries.",
     "privacy_policy": "Privacy Policy"
   },
   "ua": {
@@ -384,6 +391,13 @@
     "wine_tours_bus_guide": "Винні тури на автобусі з гідом",
     "help": "Допомога",
     "terms_of_use": "Умови використання",
+    "guided_tours_lucca_description": "Відкрийте Лукку разом із гідом!",
+    "wine_tours_bus_guide_description": "Вирушайте у захопливу подорож найкращими виноробнями регіону в супроводі досвідченого гіда. Дегустуйте вишукані вина, відкривайте унікальні смаки та дізнавайтеся про традиції виноробства, подорожуючи комфортним автобусом.",
+    "transport_luxury_cars_description": "Подорожуйте передмістями Лукки на авто та відкрийте для себе її неперевершену атмосферу. Зручне перевезення, мальовничі маршрути та справжній італійський колорит зроблять вашу подорож незабутньою.",
+    "coach_trip_packages_description": "Плануєте поїздку на годину чи на цілий день? Орендуйте комфортний і надійний транспорт швидко та без зайвих турбот! Ми гарантуємо якісний сервіс та зручний вибір для ваших подорожей.",
+    "trip_tuscan_hills_description": "Якщо вам потрібен не лише велосипед, а й досвідчений водій, ми готові допомогти! Розслабтеся та насолоджуйтеся поїздкою мальовничими місцями, поки ми подбаємо про маршрут і комфорт. Відкрийте для себе найкращі краєвиди без зайвих клопотів!",
+    "guided_tours_lucca_description_bike": "Вирушайте в захопливу подорож передмістями Лукки на велосипеді! Досліджуйте мальовничі вулички, історичні пам’ятки та чарівні ландшафти, відчуйте унікальну атмосферу цього неймовірного міста.",
+    "bike_rickshaw_rental_description": "Шукаєте швидкий та зручний спосіб пересування містом? Орендуйте якісний велосипед або рикшу всього на годину чи на весь день! Насолоджуйтесь свободою пересування, відкривайте мальовничі вулички та насолоджуйтесь комфортною їздою без зайвих турбот.",
     "privacy_policy": "Політика конфіденційності"
   },
   "de": {
@@ -578,6 +592,13 @@
     "wine_tours_bus_guide": "Weintouren mit dem Bus und Guide",
     "help": "Hilfe",
     "terms_of_use": "Nutzungsbedingungen",
+    "guided_tours_lucca_description": "Entdecken Sie Lucca mit einem Guide!",
+    "wine_tours_bus_guide_description": "Genießen Sie eine wunderbare Weinreise mit Komfort! Besuchen Sie die besten Weingüter der Region mit einem erfahrenen Guide. Probieren Sie erlesene Weine, entdecken Sie einzigartige Aromen und erfahren Sie mehr über die Weinbautraditionen, während Sie bequem im Bus reisen.",
+    "transport_luxury_cars_description": "Erleben Sie die wahre Atmosphäre von Lucca, während Sie mit dem Auto durch die Vororte reisen! Genießen Sie komfortable Transportmöglichkeiten, malerische Routen und den authentischen italienischen Charme, der Ihre Reise unvergesslich macht.",
+    "coach_trip_packages_description": "Planen Sie eine Reise für eine Stunde oder den ganzen Tag? Mieten Sie schnell und unkompliziert ein komfortables und zuverlässiges Fahrzeug! Wir garantieren hochwertigen Service und eine bequeme Wahl für Ihre Reisen.",
+    "trip_tuscan_hills_description": "Suchen Sie mehr als nur ein Fahrrad? Wir haben die perfekte Lösung! Wenn Sie neben Ihrem Fahrrad auch einen erfahrenen Fahrer benötigen, sind Sie bei uns genau richtig. Lehnen Sie sich zurück und genießen Sie die malerischen Landschaften, während wir uns um die Route und Ihren Komfort kümmern.",
+    "guided_tours_lucca_description_bike": "Begeben Sie sich auf eine spannende Reise durch die Vororte von Lucca mit dem Fahrrad! Erkunden Sie malerische Straßen, historische Sehenswürdigkeiten und charmante Landschaften und erleben Sie die einzigartige Atmosphäre dieser unglaublichen Stadt.",
+    "bike_rickshaw_rental_description": "Suchen Sie eine schnelle und bequeme Möglichkeit, sich in der Stadt fortzubewegen? Mieten Sie ein hochwertiges Fahrrad oder eine Rikscha für nur eine Stunde oder den ganzen Tag! Genießen Sie die Bewegungsfreiheit, erkunden Sie malerische Straßen und fahren Sie sorgenfrei und komfortabel.",
     "privacy_policy": "Datenschutzrichtlinie"
   },
   "reverse": {
