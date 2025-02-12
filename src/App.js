@@ -19,6 +19,7 @@ import Comments from "./Components/Home/Comments/Comments";
 import About from "./Components/AboutPage/AboutPage";
 import TourPackagesPage from "./Components/TourPackagesPage/TourPackagesPage";
 import ServicePage from "./Components/ServicePage/ServicePage";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           <Route path="/search-results" element={<SearchResults />} />
           <Route path="/about" element={<About />} />
           <Route path="/tours" element={<TourPackagesPage />} />
+          <Route path="/contacts" element={<ContactUs />} />
         </Routes>
       </LanguageProvider>
     </Router>

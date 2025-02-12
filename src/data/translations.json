@@ -197,7 +197,12 @@
     "trip_tuscan_hills_description": "Looking for more than just a bike? We have the perfect solution! If you need a skilled driver along with your ride, we’ve got you covered. Relax and enjoy the scenic landscapes while we take care of the route and your comfort.",
     "guided_tours_lucca_description_bike": "Embark on an exciting journey through the suburbs of Lucca by bike! Explore picturesque streets, historical landmarks, and charming landscapes while experiencing the unique atmosphere of this incredible city.",
     "bike_rickshaw_rental_description": "Looking for a quick and convenient way to get around the city? Rent a quality bike or rickshaw for just an hour or the whole day! Enjoy the freedom of movement, explore picturesque streets, and ride comfortably without any worries.",
-    "privacy_policy": "Privacy Policy"
+    "privacy_policy": "Privacy Policy",
+    "message": "Message",
+    "enter_message": "Enter your Message",
+    "send_message": "Send Message",
+    "get_in_touch": "Get In Touch!",
+    "fill_form": "Fill up the form and our Team will get back to you within 24 hours."
   },
   "ua": {
     "back": "Назад",
@@ -398,7 +403,12 @@
     "trip_tuscan_hills_description": "Якщо вам потрібен не лише велосипед, а й досвідчений водій, ми готові допомогти! Розслабтеся та насолоджуйтеся поїздкою мальовничими місцями, поки ми подбаємо про маршрут і комфорт. Відкрийте для себе найкращі краєвиди без зайвих клопотів!",
     "guided_tours_lucca_description_bike": "Вирушайте в захопливу подорож передмістями Лукки на велосипеді! Досліджуйте мальовничі вулички, історичні пам’ятки та чарівні ландшафти, відчуйте унікальну атмосферу цього неймовірного міста.",
     "bike_rickshaw_rental_description": "Шукаєте швидкий та зручний спосіб пересування містом? Орендуйте якісний велосипед або рикшу всього на годину чи на весь день! Насолоджуйтесь свободою пересування, відкривайте мальовничі вулички та насолоджуйтесь комфортною їздою без зайвих турбот.",
-    "privacy_policy": "Політика конфіденційності"
+    "privacy_policy": "Політика конфіденційності",
+    "message": "Повідомлення",
+    "enter_message": "Введіть ваше повідомлення",
+    "send_message": "Надіслати повідомлення",
+    "get_in_touch": "Зв'яжіться з нами!",
+    "fill_form": "Заповніть форму, і наша команда зв'яжеться з вами протягом 24 годин."
   },
   "de": {
     "back": "Zurück",
@@ -599,7 +609,12 @@
     "trip_tuscan_hills_description": "Suchen Sie mehr als nur ein Fahrrad? Wir haben die perfekte Lösung! Wenn Sie neben Ihrem Fahrrad auch einen erfahrenen Fahrer benötigen, sind Sie bei uns genau richtig. Lehnen Sie sich zurück und genießen Sie die malerischen Landschaften, während wir uns um die Route und Ihren Komfort kümmern.",
     "guided_tours_lucca_description_bike": "Begeben Sie sich auf eine spannende Reise durch die Vororte von Lucca mit dem Fahrrad! Erkunden Sie malerische Straßen, historische Sehenswürdigkeiten und charmante Landschaften und erleben Sie die einzigartige Atmosphäre dieser unglaublichen Stadt.",
     "bike_rickshaw_rental_description": "Suchen Sie eine schnelle und bequeme Möglichkeit, sich in der Stadt fortzubewegen? Mieten Sie ein hochwertiges Fahrrad oder eine Rikscha für nur eine Stunde oder den ganzen Tag! Genießen Sie die Bewegungsfreiheit, erkunden Sie malerische Straßen und fahren Sie sorgenfrei und komfortabel.",
-    "privacy_policy": "Datenschutzrichtlinie"
+    "privacy_policy": "Datenschutzrichtlinie",
+    "message": "Nachricht",
+    "enter_message": "Geben Sie Ihre Nachricht ein",
+    "send_message": "Nachricht senden",
+    "get_in_touch": "Kontaktieren Sie uns!",
+    "fill_form": "Füllen Sie das Formular aus und unser Team wird sich innerhalb von 24 Stunden bei Ihnen melden."
   },
   "reverse": {
     "Велосипеди": "Bikes",

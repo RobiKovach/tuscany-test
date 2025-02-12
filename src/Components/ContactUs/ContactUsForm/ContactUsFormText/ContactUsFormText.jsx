@@ -1,12 +1,13 @@
 import React from "react";
-import { useLanguage } from "../LanguageContext/LanguageContext";
-import translations from "../../data/translations.json";
+import "./ContactUsFormText.scss";
+import { useLanguage } from "../../../LanguageContext/LanguageContext";
+import translations from "../../../../data/translations.json";
+import { NavLink } from "react-router-dom";
 
-const FooterContacts = () => {
+export default function ContactUsFormText() {
   const { language } = useLanguage();
   const texts = translations[language];
-
-  const footerLinks = [
+  const contactsLinks = [
     {
       label: texts.address,
       path: "https://maps.app.goo.gl/2Hw4vB6EaSomC9Yk8",
@@ -26,16 +27,18 @@ const FooterContacts = () => {
       isExternal: true,
     },
   ];
-
   return (
-    <div className="content-footer__contacts contacts-footer">
-      <h2 className="contacts-footer__title footer-title">{texts.contacts}</h2>
-      <nav className="contacts-footer__nav">
-        {footerLinks.map((link, index) => (
-          <a
+    <div className="contact-us__text text-contact-us">
+      <div className="text-contact-us__titles">
+        <h3 className="text-contact-us__title">{texts.get_in_touch}</h3>
+        <p className="text-contact-us__description">{texts.fill_form}</p>
+      </div>
+      <div className="text-contact-us__info info-contact-text">
+        {contactsLinks.map((link, index) => (
+          <NavLink
             key={index}
-            href={link.path}
-            className="contacts-footer__link"
+            to={link.path}
+            className="info-contact-text__item"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -45,11 +48,9 @@ const FooterContacts = () => {
               className="contacts-footer__icon"
             />
             {link.label}
-          </a>
+          </NavLink>
         ))}
-      </nav>
+      </div>
     </div>
   );
-};
-
-export default FooterContacts;
+}

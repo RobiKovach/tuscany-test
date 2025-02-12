@@ -1,0 +1,11 @@
+.contact-us-map {
+  max-width: 100%;
+  img {
+    @media (max-width: 768px) {
+      height: 50vh;
+      width: auto;
+      object-fit: cover;
+      object-position: 55%;
+    }
+  }
+}

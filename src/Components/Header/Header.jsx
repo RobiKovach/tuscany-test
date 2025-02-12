@@ -1,13 +1,12 @@
 import React from "react";
-import { useLocation } from "react-router-dom"; // Отримуємо поточний URL
+import { useLocation } from "react-router-dom";
 import Spoiler from "../Spoiler/Spoiler";
 import Menu from "./Menu/Menu";
 import "./Header.scss";
 
 export default function Header() {
-  const location = useLocation(); // Отримуємо поточний URL
+  const location = useLocation();
 
-  // Перевіряємо, чи це не головна сторінка
   const isNotHomePage = location.pathname !== "/";
 
   return (
@@ -17,7 +16,6 @@ export default function Header() {
           <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="Logo" />
         </div>
         <div className="header__other">
-          {/* Передаємо клас для меню */}
           <Menu className={isNotHomePage ? "menu--nohome" : ""} />
           <div className="header__actions action-header">
             <div className="action-header__language">
