@@ -1,58 +1,97 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import { useLocation } from "react-router-dom"; // 📌 Додаємо useLocation
+import { useLocation, NavLink } from "react-router-dom";
 import { useLanguage } from "../LanguageContext/LanguageContext";
-import translations from "../../data/translations.json"; // 📌 Імпортуємо переклади
+import translations from "../../data/translations.json";
+import LoginModal from "../Authorization/Modal/LoginModal";
+import RegisterModal from "../Authorization/Modal/RegisterModal";
+import UserInfo from "../UserInfo/UserInfo";
 
 const ResponsiveMove = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
   const [container, setContainer] = useState(null);
   const { language } = useLanguage();
-  const location = useLocation(); // 📌 Відстежуємо зміну URL
+  const location = useLocation();
 
-  // 📌 Перевіряємо, чи ми на сторінці продукту
   const isNotHomePage =
     location.pathname !== "/" && location.pathname !== "/about";
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+  const [user, setUser] = useState(null);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
 
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+  useEffect(() => {
+    const storedUser = sessionStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
   }, []);
 
   useEffect(() => {
-    // 🔥 Оновлюємо контейнер при зміні сторінки
     const newContainer = isMobile
       ? document.getElementById("menu-container")
       : document.getElementById("header-container");
 
     setContainer(newContainer);
-  }, [isMobile, location.pathname]); // 🔥 Додаємо location.pathname у залежності
+  }, [isMobile, location.pathname]);
+
+  const handleAuthSuccess = () => {
+    setIsLoginOpen(false);
+    setIsRegisterOpen(false);
+    const storedUser = sessionStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  };
 
   return (
     <>
       {container &&
         createPortal(
           <div className="moving-block">
-            <a
-              href="#"
-              className={`action-header__login ${
-                isNotHomePage ? "product-page-nohome" : ""
-              }`}
-            >
-              {translations[language].login}
-            </a>
-            <a href="#" className="action-header__sign">
-              {translations[language].sign_up}
-            </a>
+            {!user ? (
+              <>
+                <NavLink
+                  to="#"
+                  className={`action-header__login ${
+                    isNotHomePage ? "product-page-nohome" : ""
+                  }`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsLoginOpen(true);
+                  }}
+                >
+                  {translations[language].login}
+                </NavLink>
+                <NavLink
+                  to="#"
+                  className="action-header__sign"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsRegisterOpen(true);
+                  }}
+                >
+                  {translations[language].sign_up}
+                </NavLink>
+              </>
+            ) : (
+              <UserInfo />
+            )}
           </div>,
           container
         )}
+
+      <LoginModal
+        isOpen={isLoginOpen}
+        onClose={handleAuthSuccess}
+        onOpenRegister={() => setIsRegisterOpen(true)}
+      />
+
+      <RegisterModal
+        isOpen={isRegisterOpen}
+        onClose={handleAuthSuccess}
+        onOpenLogin={() => setIsLoginOpen(true)}
+      />
     </>
   );
 };

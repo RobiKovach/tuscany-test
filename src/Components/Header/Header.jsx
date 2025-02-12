@@ -6,7 +6,6 @@ import "./Header.scss";
 
 export default function Header() {
   const location = useLocation();
-
   const isNotHomePage = location.pathname !== "/";
 
   return (

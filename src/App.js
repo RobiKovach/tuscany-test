@@ -20,6 +20,7 @@ import About from "./Components/AboutPage/AboutPage";
 import TourPackagesPage from "./Components/TourPackagesPage/TourPackagesPage";
 import ServicePage from "./Components/ServicePage/ServicePage";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import Tickets from "./Components/Tickets/Tickets";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/tours" element={<TourPackagesPage />} />
           <Route path="/contacts" element={<ContactUs />} />
+          <Route path="/tickets" element={<Tickets />} />
         </Routes>
       </LanguageProvider>
     </Router>
