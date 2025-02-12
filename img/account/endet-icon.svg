@@ -1,0 +1,6 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="material-symbols:event-upcoming-outline">
+<path id="Vector" d="M15 22.5V20.5H19V10.5H5V14.5H3V6.5C3 5.95 3.19567 5.47933 3.587 5.088C3.979 4.696 4.45 4.5 5 4.5H6V2.5H8V4.5H16V2.5H18V4.5H19C19.55 4.5 20.021 4.696 20.413 5.088C20.8043 5.47933 21 5.95 21 6.5V20.5C21 21.05 20.8043 21.521 20.413 21.913C20.021 22.3043 19.55 22.5 19 22.5H15ZM5 8.5H19V6.5H5V8.5Z" fill="#5AB819"/>
+<path id="Vector_2" d="M4.5 18.25L7 20.75L12 15.75" stroke="#5AB819" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
