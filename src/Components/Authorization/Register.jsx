@@ -4,8 +4,10 @@ import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../LanguageContext/LanguageContext";
 import translations from "../../data/translations.json";
+import { useAuth } from "./AuthContext"; // Використовуємо глобальний контекст
 
 const Register = ({ onClose, onOpenLogin }) => {
+  const { setUser } = useAuth(); // Оновлення користувача глобально
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
   const [isChecked, setIsChecked] = useState(false);
@@ -39,9 +41,11 @@ const Register = ({ onClose, onOpenLogin }) => {
         formData.email,
         formData.password
       );
-      sessionStorage.setItem("user", JSON.stringify(userCredential.user));
+      setUser(userCredential.user); // Оновлюємо глобального користувача
+      console.log("✅ Registration successful:", userCredential.user);
       onClose();
     } catch (error) {
+      console.error("❌ Registration error:", error);
       setError(texts.registration_failed);
     }
   };
@@ -50,9 +54,11 @@ const Register = ({ onClose, onOpenLogin }) => {
     setError("");
     try {
       const userCredential = await signInWithPopup(auth, googleProvider);
-      sessionStorage.setItem("user", JSON.stringify(userCredential.user));
+      setUser(userCredential.user); // Оновлюємо глобального користувача
+      console.log("✅ Google Sign-Up successful:", userCredential.user);
       onClose();
     } catch (error) {
+      console.error("❌ Google Sign-Up error:", error);
       setError(texts.google_signup_failed);
     }
   };

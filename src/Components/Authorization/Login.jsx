@@ -3,11 +3,13 @@ import { auth, googleProvider } from "./firebase";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useLanguage } from "../LanguageContext/LanguageContext";
 import translations from "../../data/translations.json";
+import { useAuth } from "./AuthContext"; // Використовуємо глобальний контекст
 
 const Login = ({ onClose, onOpenRegister }) => {
   const { language } = useLanguage();
   const [showPassword, setShowPassword] = useState(false);
   const texts = translations[language];
+  const { setUser } = useAuth(); // Використовуємо `setUser`
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
 
@@ -24,24 +26,24 @@ const Login = ({ onClose, onOpenRegister }) => {
         formData.email,
         formData.password
       );
-      sessionStorage.setItem("user", JSON.stringify(userCredential.user));
+      setUser(userCredential.user); // Оновлюємо глобального користувача
+      console.log("✅ Email login successful:", userCredential.user);
       onClose();
     } catch (error) {
+      console.error("❌ Email login error:", error);
       setError(texts.invalid_credentials);
     }
-  };
-
-  const togglePasswordVisibility = () => {
-    setShowPassword((prev) => !prev);
   };
 
   const handleGoogleSignIn = async () => {
     setError("");
     try {
       const userCredential = await signInWithPopup(auth, googleProvider);
-      sessionStorage.setItem("user", JSON.stringify(userCredential.user));
+      setUser(userCredential.user); // Оновлюємо глобального користувача
+      console.log("✅ Google login successful:", userCredential.user);
       onClose();
     } catch (error) {
+      console.error("❌ Google login error:", error);
       setError(texts.google_login_failed);
     }
   };
@@ -80,7 +82,7 @@ const Login = ({ onClose, onOpenRegister }) => {
             <button
               type="button"
               className="toggle-password modal__show-pass"
-              onClick={togglePasswordVisibility}
+              onClick={() => setShowPassword((prev) => !prev)}
             >
               <img
                 src={`${process.env.PUBLIC_URL}/img/account/eye.svg`}
@@ -107,19 +109,6 @@ const Login = ({ onClose, onOpenRegister }) => {
           </button>
         </div>
       </form>
-
-      <p className="modal__switch">
-        {texts.dont_have_account}{" "}
-        <button
-          className="modal__switch-btn"
-          onClick={() => {
-            onClose();
-            onOpenRegister();
-          }}
-        >
-          {texts.sign_up}
-        </button>
-      </p>
     </div>
   );
 };

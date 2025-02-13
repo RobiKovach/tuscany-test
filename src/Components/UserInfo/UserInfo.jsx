@@ -3,21 +3,15 @@ import { useNavigate } from "react-router-dom";
 import LogoutButton from "../Authorization/LogoutButton";
 import { useLanguage } from "../LanguageContext/LanguageContext";
 import translations from "../../data/translations.json";
+import { useAuth } from "../Authorization/AuthContext"; // Імпорт глобального контексту
 import "./UserInfo.scss";
 
 const UserInfo = () => {
-  const [user, setUser] = useState(null);
+  const { user } = useAuth(); // Отримуємо користувача з глобального стану
   const [menuOpen, setMenuOpen] = useState(false);
   const { language } = useLanguage();
   const navigate = useNavigate();
   const menuRef = useRef(null);
-
-  useEffect(() => {
-    const storedUser = sessionStorage.getItem("user");
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    }
-  }, []);
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -46,7 +40,7 @@ const UserInfo = () => {
 
   return (
     <div className="user-info">
-      {user && (
+      {user && ( // Тепер user оновлюється автоматично через useAuth()
         <div className="user-info__wrapper" ref={menuRef}>
           <img
             src={`${process.env.PUBLIC_URL}/img/account/profile.svg`}

@@ -7,6 +7,7 @@
       "description": "bike_rental_description",
       "description_full": "bike_rickshaw_rental_description",
       "button_text": "read_more",
+      "price": "10",
       "image": "/img/services/bike-rickshaw.png"
     },
     {
@@ -16,6 +17,7 @@
       "description": "guided_tour_description",
       "description_full": "guided_tours_lucca_description_bike",
       "button_text": "read_more",
+      "price": "30",
       "image": "/img/services/guided-tours-lucca.png"
     },
     {
@@ -34,6 +36,7 @@
       "description": "bike_rental_description",
       "description_full": "coach_trip_packages_description",
       "button_text": "read_more",
+      "price": "45",
       "image": "/img/services/coach-trip.png"
     },
     {
@@ -43,6 +46,7 @@
       "description": "guided_tours_lucca_description",
       "description_full": "transport_luxury_cars_description",
       "button_text": "read_more",
+      "price": "20",
       "image": "/img/services/luxury-transport.png"
     },
     {
@@ -52,6 +56,7 @@
       "description": "taxi_service_description",
       "description_full": "wine_tours_bus_guide_description",
       "button_text": "read_more",
+      "price": "25",
       "image": "/img/services/wine-tour.png"
     }
   ],

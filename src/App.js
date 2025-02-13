@@ -21,41 +21,46 @@ import TourPackagesPage from "./Components/TourPackagesPage/TourPackagesPage";
 import ServicePage from "./Components/ServicePage/ServicePage";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Tickets from "./Components/Tickets/Tickets";
+import Checkout from "./Components/Checkout/Checkout";
+import { AuthProvider } from "./Components/Authorization/AuthContext";
 
 function App() {
   return (
     <Router basename="/tuscany-test">
-      <LanguageProvider>
-        <ScrollToTop />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Header />
-                <Banner />
-                <Popular />
-                <Welcome />
-                <SpecialOffers />
-                <Anons />
-                <BookBike />
-                <PopularPackages />
-                <Comments />
-                <ResponsiveMove />
-                <Footer />
-              </>
-            }
-          />
-          <Route path="/products/:productId" element={<ProductPage />} />
-          <Route path="/services/:servicesId" element={<ServicePage />} />
-          <Route path="/" element={<Tabs />} />
-          <Route path="/search-results" element={<SearchResults />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/tours" element={<TourPackagesPage />} />
-          <Route path="/contacts" element={<ContactUs />} />
-          <Route path="/tickets" element={<Tickets />} />
-        </Routes>
-      </LanguageProvider>
+      <AuthProvider>
+        <LanguageProvider>
+          <ScrollToTop />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Header />
+                  <Banner />
+                  <Popular />
+                  <Welcome />
+                  <SpecialOffers />
+                  <Anons />
+                  <BookBike />
+                  <PopularPackages />
+                  <Comments />
+                  <ResponsiveMove />
+                  <Footer />
+                </>
+              }
+            />
+            <Route path="/products/:productId" element={<ProductPage />} />
+            <Route path="/services/:servicesId" element={<ServicePage />} />
+            <Route path="/" element={<Tabs />} />
+            <Route path="/search-results" element={<SearchResults />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/tours" element={<TourPackagesPage />} />
+            <Route path="/contacts" element={<ContactUs />} />
+            <Route path="/tickets" element={<Tickets />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
+        </LanguageProvider>
+      </AuthProvider>
     </Router>
   );
 }

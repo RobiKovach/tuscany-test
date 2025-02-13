@@ -2,16 +2,21 @@ import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useLanguage } from "../LanguageContext/LanguageContext";
 import translations from "../../data/translations.json";
+import { useAuth } from "../Authorization/AuthContext";
 
 const LogoutButton = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { language } = useLanguage();
+  const { logout } = useAuth();
 
-  const handleLogout = () => {
-    sessionStorage.removeItem("user");
-    navigate("/");
-    setTimeout(() => window.location.reload(), 100);
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate("/");
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
   };
 
   useEffect(() => {
