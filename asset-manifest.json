@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tuscany-test/static/css/main.60bfa50e.css",
-    "main.js": "/tuscany-test/static/js/main.c1990462.js",
+    "main.css": "/tuscany-test/static/css/main.a0afa4ca.css",
+    "main.js": "/tuscany-test/static/js/main.a2c28094.js",
     "static/media/slick.svg": "/tuscany-test/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/tuscany-test/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/tuscany-test/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/tuscany-test/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tuscany-test/index.html",
-    "main.60bfa50e.css.map": "/tuscany-test/static/css/main.60bfa50e.css.map",
-    "main.c1990462.js.map": "/tuscany-test/static/js/main.c1990462.js.map"
+    "main.a0afa4ca.css.map": "/tuscany-test/static/css/main.a0afa4ca.css.map",
+    "main.a2c28094.js.map": "/tuscany-test/static/js/main.a2c28094.js.map"
   },
   "entrypoints": [
-    "static/css/main.60bfa50e.css",
-    "static/js/main.c1990462.js"
+    "static/css/main.a0afa4ca.css",
+    "static/js/main.a2c28094.js"
   ]
 }
