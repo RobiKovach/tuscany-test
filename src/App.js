@@ -23,6 +23,9 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 import Tickets from "./Components/Tickets/Tickets";
 import Checkout from "./Components/Checkout/Checkout";
 import { AuthProvider } from "./Components/Authorization/AuthContext";
+import BookingDetails from "./Components/Checkout/BookingDetails/BookingDetails";
+import YourDetails from "./Components/Checkout/YourDetails/YourDetails";
+import PaymentMethod from "./Components/Checkout/PaymentMethod/PaymentMethod";
 
 function App() {
   return (
@@ -58,6 +61,15 @@ function App() {
             <Route path="/contacts" element={<ContactUs />} />
             <Route path="/tickets" element={<Tickets />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route
+              path="/checkout/booking-details"
+              element={<BookingDetails />}
+            />
+            <Route path="/checkout/your-details" element={<YourDetails />} />
+            <Route
+              path="/checkout/payment-method"
+              element={<PaymentMethod />}
+            />
           </Routes>
         </LanguageProvider>
       </AuthProvider>

@@ -1,16 +1,23 @@
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import translations from "../../data/translations.json";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import BookingDetails from "./BookingDetails/BookingDetails";
+import YourDetails from "./YourDetails/YourDetails";
+import PaymentMethod from "./PaymentMethod/PaymentMethod";
 import "./Checkout.scss";
-import ResponsiveMove from "../ResponsiveMove/ResponsiveMove";
 
 const Checkout = ({ language }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const { product, selectedDate, selectedTime } = location.state || {};
+
+  useEffect(() => {
+    if (location.pathname === "/checkout") {
+      navigate("/checkout/booking-details", {
+        state: { product, selectedDate, selectedTime },
+      });
+    }
+  }, [location, navigate, product, selectedDate, selectedTime]);
 
   useEffect(() => {
     if (!product) {
@@ -33,21 +40,20 @@ const Checkout = ({ language }) => {
     );
   }
 
+  const currentStep = location.pathname;
+
   return (
     <>
-      <Header />
-      <section className="checkout">
-        <div className="checkout__wrapper">
-          <BookingDetails
-            product={product}
-            selectedDate={selectedDate}
-            selectedTime={selectedTime}
-            language={language}
-          />
-        </div>
-      </section>
-      <ResponsiveMove />
-      <Footer />
+      {currentStep === "/checkout/booking-details" && (
+        <BookingDetails
+          product={product}
+          selectedDate={selectedDate}
+          selectedTime={selectedTime}
+          language={language}
+        />
+      )}
+      {currentStep === "/checkout/your-details" && <YourDetails />}
+      {currentStep === "/checkout/payment-method" && <PaymentMethod />}
     </>
   );
 };

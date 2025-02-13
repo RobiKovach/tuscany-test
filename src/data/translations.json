@@ -220,7 +220,10 @@
     "login_with_google": "Log in with Google",
     "dont_have_account": "Don’t have an account?",
     "invalid_credentials": "Invalid email or password.",
-    "google_login_failed": "Google login failed."
+    "google_login_failed": "Google login failed.",
+    "booking_details": "Booking Details",
+    "your_details": "Your Details",
+    "payment": "Payment"
   },
   "ua": {
     "back": "Назад",
@@ -444,7 +447,10 @@
     "login_with_google": "Увійти з Google",
     "dont_have_account": "Немає акаунту?",
     "invalid_credentials": "Неправильний email або пароль.",
-    "google_login_failed": "Не вдалося увійти через Google."
+    "google_login_failed": "Не вдалося увійти через Google.",
+    "booking_details": "Деталі бронювання",
+    "your_details": "Ваші дані",
+    "payment": "Оплата"
   },
   "de": {
     "back": "Zurück",
@@ -668,7 +674,10 @@
     "login_with_google": "Mit Google anmelden",
     "dont_have_account": "Kein Konto?",
     "invalid_credentials": "Ungültige E-Mail oder Passwort.",
-    "google_login_failed": "Google-Anmeldung fehlgeschlagen."
+    "google_login_failed": "Google-Anmeldung fehlgeschlagen.",
+    "booking_details": "Détails de la réservation",
+    "your_details": "Vos détails",
+    "payment": "Paiement"
   },
   "reverse": {
     "Велосипеди": "Bikes",
