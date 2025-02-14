@@ -30,8 +30,8 @@ import PaymentMethod from "./Components/Checkout/PaymentMethod/PaymentMethod";
 function App() {
   return (
     <Router basename="/tuscany-test">
-      <AuthProvider>
-        <LanguageProvider>
+      <LanguageProvider>
+        <AuthProvider>
           <ScrollToTop />
           <Routes>
             <Route
@@ -71,8 +71,8 @@ function App() {
               element={<PaymentMethod />}
             />
           </Routes>
-        </LanguageProvider>
-      </AuthProvider>
+        </AuthProvider>
+      </LanguageProvider>
     </Router>
   );
 }

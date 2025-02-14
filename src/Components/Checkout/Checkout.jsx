@@ -9,6 +9,8 @@ import "./Checkout.scss";
 const Checkout = ({ language }) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const texts = translations[language] || translations["en"] || {};
+
   const { product, selectedDate, selectedTime } = location.state || {};
 
   useEffect(() => {
@@ -33,11 +35,7 @@ const Checkout = ({ language }) => {
   }, [product, selectedDate, selectedTime, navigate]);
 
   if (!product) {
-    return (
-      <p>
-        {translations[language]?.no_product_selected || "No product selected"}
-      </p>
-    );
+    return <p>{texts.no_product_selected || "No product selected"}</p>;
   }
 
   const currentStep = location.pathname;
@@ -49,7 +47,6 @@ const Checkout = ({ language }) => {
           product={product}
           selectedDate={selectedDate}
           selectedTime={selectedTime}
-          language={language}
         />
       )}
       {currentStep === "/checkout/your-details" && <YourDetails />}
