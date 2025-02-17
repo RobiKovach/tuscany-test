@@ -3,11 +3,20 @@
   align-items: flex-start;
   justify-content: space-between;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
   &__option {
     display: flex;
     flex-direction: column;
     width: 40%;
     row-gap: 20px;
+
+    @media (max-width: 768px) {
+      width: 98%;
+    }
   }
 
   &__title {

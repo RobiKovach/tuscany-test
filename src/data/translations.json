@@ -240,7 +240,15 @@
     "only_with_adult": "Only in combination with: Adult (18+)",
     "free_for_kids": "Free for kids under 6 and disabled visitors (74%+)",
     "priority_tickets": "Pregnant women, families with strollers, and visitors on crutches can buy priority tickets at the venue",
-    "who_shall_tickets": "Who shall we send these tickets to?"
+    "who_shall_tickets": "Who shall we send these tickets to?",
+    "my_tickets": "My Tickets",
+    "tour_name": "Tour Name",
+    "payment_method": "Payment Method",
+    "status": "Status",
+    "upcoming": "Upcoming",
+    "ended": "Ended",
+    "no_tickets": "You don't have any tickets yet. Start planning your next trip!",
+    "not_selected": "Not selected"
   },
   "ua": {
     "back": "Назад",
@@ -484,7 +492,15 @@
     "only_with_adult": "Тільки у поєднанні з: Дорослий (18+)",
     "free_for_kids": "Безкоштовно для дітей до 6 років та людей з інвалідністю (74%+)",
     "priority_tickets": "Вагітні, сім’ї з візочками та відвідувачі на милицях можуть придбати пріоритетні квитки на місці",
-    "who_shall_tickets": "Кому ми надішлемо ці квитки?"
+    "who_shall_tickets": "Кому ми надішлемо ці квитки?",
+    "my_tickets": "Мої квитки",
+    "tour_name": "Назва туру",
+    "payment_method": "Спосіб оплати",
+    "status": "Статус",
+    "upcoming": "Очікується",
+    "ended": "Закінчено",
+    "no_tickets": "У вас ще немає квитків. Почніть планувати свою подорож!",
+    "not_selected": "Не вибрано"
   },
   "de": {
     "back": "Zurück",
@@ -728,7 +744,15 @@
     "only_with_adult": "Nur in Kombination mit: Erwachsene (18+)",
     "free_for_kids": "Kostenlos für Kinder unter 6 Jahren und behinderte Besucher (74%+)",
     "priority_tickets": "Schwangere, Familien mit Kinderwagen und Besucher mit Krücken können am Veranstaltungsort Prioritätstickets kaufen",
-    "who_shall_tickets": "Wem sollen wir diese Tickets schicken?"
+    "who_shall_tickets": "Wem sollen wir diese Tickets schicken?",
+    "my_tickets": "My Tickets",
+    "tour_name": "Tour Name",
+    "payment_method": "Payment Method",
+    "status": "Status",
+    "upcoming": "Upcoming",
+    "ended": "Ended",
+    "no_tickets": "You don't have any tickets yet. Start planning your next trip!",
+    "not_selected": "Not selected"
   },
   "reverse": {
     "Велосипеди": "Bikes",

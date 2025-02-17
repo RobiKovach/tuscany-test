@@ -28,3 +28,185 @@
     text-align: center;
   }
 }
+
+.ticket__wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 42px;
+}
+
+.ticket__title {
+  text-align: left;
+  margin: 0;
+  font-size: 24px;
+}
+
+/* 🔥 Grid Container */
+.ticket__grid {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid #efefef;
+  padding: 4px 20px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+/* 🔥 Header - задає однакові колонки */
+.ticket__header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  span {
+    padding: 16px 10px 20px 10px;
+    color: #333;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.6;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* 🔥 Ticket Row */
+.ticket__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #ddd;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+.ticket__row:last-child {
+  border-bottom: none;
+}
+
+/* 🔥 Тур (Зображення + Деталі) */
+.ticket__tour {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+.ticket__tour-img {
+  width: 160px;
+  height: 110px;
+  border-radius: 5px;
+  object-fit: cover;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.ticket__tour-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+
+  strong {
+    color: #333;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
+
+/* 🔥 Оплата */
+.ticket__payment {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+/* 🔥 Ціна */
+.ticket__price {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* 🔥 Статус */
+.ticket__status {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.ticket__status.upcoming {
+  color: orange;
+}
+
+.ticket__status.ended {
+  color: green;
+}
