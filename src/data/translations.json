@@ -239,7 +239,8 @@
     "with_valid_id": "With valid ID",
     "only_with_adult": "Only in combination with: Adult (18+)",
     "free_for_kids": "Free for kids under 6 and disabled visitors (74%+)",
-    "priority_tickets": "Pregnant women, families with strollers, and visitors on crutches can buy priority tickets at the venue"
+    "priority_tickets": "Pregnant women, families with strollers, and visitors on crutches can buy priority tickets at the venue",
+    "who_shall_tickets": "Who shall we send these tickets to?"
   },
   "ua": {
     "back": "Назад",
@@ -482,7 +483,8 @@
     "with_valid_id": "З дійсним посвідченням",
     "only_with_adult": "Тільки у поєднанні з: Дорослий (18+)",
     "free_for_kids": "Безкоштовно для дітей до 6 років та людей з інвалідністю (74%+)",
-    "priority_tickets": "Вагітні, сім’ї з візочками та відвідувачі на милицях можуть придбати пріоритетні квитки на місці"
+    "priority_tickets": "Вагітні, сім’ї з візочками та відвідувачі на милицях можуть придбати пріоритетні квитки на місці",
+    "who_shall_tickets": "Кому ми надішлемо ці квитки?"
   },
   "de": {
     "back": "Zurück",
@@ -725,7 +727,8 @@
     "with_valid_id": "Mit gültigem Ausweis",
     "only_with_adult": "Nur in Kombination mit: Erwachsene (18+)",
     "free_for_kids": "Kostenlos für Kinder unter 6 Jahren und behinderte Besucher (74%+)",
-    "priority_tickets": "Schwangere, Familien mit Kinderwagen und Besucher mit Krücken können am Veranstaltungsort Prioritätstickets kaufen"
+    "priority_tickets": "Schwangere, Familien mit Kinderwagen und Besucher mit Krücken können am Veranstaltungsort Prioritätstickets kaufen",
+    "who_shall_tickets": "Wem sollen wir diese Tickets schicken?"
   },
   "reverse": {
     "Велосипеди": "Bikes",

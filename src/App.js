@@ -26,6 +26,7 @@ import { AuthProvider } from "./Components/Authorization/AuthContext";
 import BookingDetails from "./Components/Checkout/BookingDetails/BookingDetails";
 import YourDetails from "./Components/Checkout/YourDetails/YourDetails";
 import PaymentMethod from "./Components/Checkout/PaymentMethod/PaymentMethod";
+import PaymentSuccess from "./Components/Checkout/PaymentSuccess/PaymentSuccess";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
               path="/checkout/payment-method"
               element={<PaymentMethod />}
             />
+            <Route path="/payment-success" element={<PaymentSuccess />} />
           </Routes>
         </AuthProvider>
       </LanguageProvider>

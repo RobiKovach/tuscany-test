@@ -1,0 +1,49 @@
+.payment-method {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    row-gap: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.pay-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.pay-btn {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 16px 24px;
+  border-radius: 5px;
+  background: #fa8b02;
+  border: none;
+  transition: 0.3s;
+  &:hover {
+    background: #ff9f00;
+  }
+}
+
+.StripeElement.StripeElement--empty {
+  padding: 20px;
+  font-size: 20px;
+}

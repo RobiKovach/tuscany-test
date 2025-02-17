@@ -69,8 +69,6 @@ const BookingDetails = () => {
       },
     });
   };
-  console.log("🔍 Product Data:", product);
-  console.log("💰 Adult price:", product.adult);
 
   return (
     <>
